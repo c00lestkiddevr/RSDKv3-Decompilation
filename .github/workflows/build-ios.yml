@@ -27,7 +27,7 @@ jobs:
         zip -r RSDKv3-unsigned.ipa Payload
 
     - name: Upload IPA Artifact
-      uses: actions/artifacts@v4
+      uses: actions/upload-artifact@v4
       with:
         name: RSDKv3-iOS-IPA
         path: RSDKv3-unsigned.ipa
